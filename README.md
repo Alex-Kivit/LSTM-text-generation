@@ -1,6 +1,6 @@
 # This is a LSTM RNN that is able to generate text based on multiple txt files provided by user.
 
-Requirements:
+**Requirements:**
 - python3
 - packages from requirements.txt
 
