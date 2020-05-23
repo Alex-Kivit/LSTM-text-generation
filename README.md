@@ -5,7 +5,7 @@ In order to use the *jupyter notebook file*, you will need to change the file pa
 ## What is the idea?
 The general idea is to learn the dependencies between words and the conditional probabilities of words in sequences so that we can in turn generate wholly new and original sequences of words. We recommend using books from project Gutenberg (https://www.gutenberg.org). It gives access to free books that are no longer protected by copyrights.
 
-## How it works?**
+## How it works?
 We split the book text up into subsequences with a fixed length of 11 words, an arbitrary length. We could just as easily split the data up by sentences and pad the shorter sequences and truncate the longer ones.
 
 Each training pattern of the network is comprised of 11 time steps of one word (X) followed by one word output (y). When creating these sequences, we slide this window along the whole book one word at a time, allowing each word a chance to be learned from the 11 words that preceded it (except the first 11 words of course).
